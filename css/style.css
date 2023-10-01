@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+
+/* Header */
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    background-image: url(https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+/* Title */
+
+.logo {
+    font-family: 'willowitalic';
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bolder;
+    font-stretch: expanded;
+    color: white;
+}
+
+
+/* Menu de navegacion */
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+
+}
+
+.navlist a:hover {
+    color: plum;
+    border-bottom: 2px solid plum;
+}
+
+
+
+/* Contenedor con todas las pestanias */
+
+.container {
+    display: flex;
+    height: 100vh; /* Set the container height to cover the entire viewport */
+    flex-direction: column; /* Stack the sections vertically */
+  }
+
+
+/* 1. Picture of the day */
+
+.pictureOfTheDay {
+    height: 100%;
+    width: 100%;
+    left: 50px;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; 
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .pictureOfTheDay h2 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.9;
+}
+
+.pictureOfTheDay p {
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.pictureOfTheDay-img {
+    width: auto;
+    height: auto;
+    align-self:center;
+}
+  
+
+/* Boton para Ver Articulo */
+
+.pictureOfTheDay a {
+    display: inline-block;
+    color: black;
+    background: plum;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.pictureOfTheDay-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform:scale3d(10px);
+}
+
+
+
+/* 2. Livestream de ISS */
+
+.livestream {
+    height:100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+  
+.livestream h2 {
+    color: white;
+    font-size: 25px;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.livestream-stream {
+    width: auto;
+    height: auto;
+    align-self:center;
+}
+
+
+
+/* Footer */
+
+footer {
+    position: absolute;
+    margin-top: 990px;
+    background-color: darkslategray ;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+
+footer p {
+    font-size: 15px;
+    color: white;
+    vertical-align: center;
+    margin-top: 40px;
+}
+
+/* Iconos de Social Media */
+
+.icons {
+   display: flex;
+   justify-content: center;
+   position:relative;
+   margin-top: 50px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   padding: 0 5%;
+   transform: none;
+   gap: 10px; 
+   z-index: 1000;
+}
+
+.icons a {
+   text-align: center;
+   margin-left: 10px;
+   color: white;
+   font-size: 30px;
+   font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.icons i:hover {
+    color: plum;
+    transform: translateY(-5px);
+}
